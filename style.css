@@ -20,6 +20,10 @@
   border-radius: 10px;
 }
 
+#callToAction {
+  cursor: pointer;
+}
+
 form {
   border: solid 1px black;
   display: flex;
