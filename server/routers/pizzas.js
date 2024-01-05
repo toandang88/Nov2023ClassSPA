@@ -40,7 +40,7 @@ router.get("/", async (request, response) => {
 // Get a single pizza by ID
 router.get("/:id", async (request, response) => {
   try {
-    const data = await Pizza.findByIdAndRemove(request.params.id);
+    const data = await Pizza.findById(request.params.id);
 
     response.json(data);
   } catch (error) {
